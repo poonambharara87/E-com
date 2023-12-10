@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('qty');
             $table->string('tax');
-            $table->tinyInteger('status');
+            $table->enum('status',['active','inactive'])->default('inactive');
             $table->tinyInteger('trending')->nullable();
             $table->mediumText('meta_title');
             $table->mediumText('meta_keywords');
