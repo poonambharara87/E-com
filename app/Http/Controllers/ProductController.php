@@ -45,7 +45,7 @@ class ProductController extends Controller
         return view('products.show');
        
     }
-    public function search($location)
+    public function search($location = null)
     {
         return $location;
     }
